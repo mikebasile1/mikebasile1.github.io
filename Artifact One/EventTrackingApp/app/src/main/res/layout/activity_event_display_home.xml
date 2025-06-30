@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Layout for the Event Display (Home) screen -->
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/BaseConstraintLayout"
+    tools:context=".EventDisplayHome">
+
+    <!-- Search bar for event title -->
+    <EditText
+        android:id="@+id/search_input"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:drawableStart="@android:drawable/ic_menu_search"
+        android:hint="@string/searchEvents"
+        android:importantForAutofill="yes"
+        android:autofillHints="name"
+        android:inputType="text"
+        android:padding="12dp"
+        android:textSize="16sp"
+        android:textColor="?attr/colorOnSurface"
+        android:textColorHint="?attr/colorOnSurface"
+        android:backgroundTint="?attr/colorOutline"
+        android:imeOptions="actionDone"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintWidth_percent="0.9"/>
+
+    <!-- Displays message when there are no events in the list -->
+    <TextView
+        android:id="@+id/empty_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:text="@string/noEvents"
+        android:textSize="16sp"
+        android:textColor="?attr/colorOnSurface"
+        app:layout_constraintTop_toBottomOf="@id/search_input"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <!-- RecyclerView that displays the list of events -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:padding="16dp"
+        android:clipToPadding="false"
+        app:layout_constraintTop_toBottomOf="@id/search_input"
+        app:layout_constraintBottom_toTopOf="@id/add_event"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <!-- Floating Action Button to launch the NewEvent screen -->
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/add_event"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="28dp"
+        android:backgroundTint="?attr/colorSecondaryVariant"
+        android:contentDescription="@string/floatingActionButton"
+        app:tint="?attr/colorOnSecondary"
+        app:rippleColor="?attr/colorOnSecondary"
+        app:elevation="6dp"
+        app:srcCompat="@drawable/ic_add_icon"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

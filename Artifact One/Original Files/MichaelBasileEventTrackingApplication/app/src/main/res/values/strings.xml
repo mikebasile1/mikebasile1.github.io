@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Michael Basile - Event Tracking Application</string>
+    <string name="calendar_image">Calendar Image</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="register">Register</string>
+    <string name="event_tracking">Event Tracking</string>
+    <string name="reenter_password">Reenter password</string>
+    <string name="enter_password">Enter password</string>
+    <string name="account_registration">Account Registration</string>
+    <string name="enter_username_email_address">Enter username (email address)</string>
+    <string name="time">Time</string>
+    <string name="date">Date</string>
+    <string name="description_of_event">Description of event</string>
+    <string name="title">Title</string>
+    <string name="event_id">Event ID</string>
+    <string name="edit">Edit</string>
+</resources>

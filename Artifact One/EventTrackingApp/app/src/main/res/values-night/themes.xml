@@ -1,0 +1,49 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Dark theme with action bar -->
+    <style name="Theme.Default" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/dark_storm</item>
+        <item name="colorPrimaryVariant">@color/dark_sky</item>
+        <item name="colorOnPrimary">@color/white</item>
+
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/dark_ocean</item>
+        <item name="colorSecondaryVariant">@color/dark_sky</item>
+        <item name="colorOnSecondary">@color/white</item>
+
+        <!-- Background and surface colors -->
+        <item name="android:windowBackground">@color/black</item>
+        <item name="colorSurface">@color/dark_silver</item>
+        <item name="colorOnSurface">@color/white</item>
+
+        !-- Outline and error colors -->
+        <item name="colorOutline">@color/colorOutline</item>
+        <item name="colorError">@color/colorError</item>
+
+        <!-- Status bar color -->
+        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+    </style>
+
+    <!-- Dark theme without action bar -->
+    <style name="Theme.Full" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/dark_storm</item>
+        <item name="colorPrimaryVariant">@color/dark_sky</item>
+        <item name="colorOnPrimary">@color/white</item>
+
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/dark_ocean</item>
+        <item name="colorSecondaryVariant">@color/dark_sky</item>
+        <item name="colorOnSecondary">@color/white</item>
+
+        <!-- Background and surface colors -->
+        <item name="android:windowBackground">@color/black</item>
+        <item name="colorSurface">@color/dark_silver</item>
+        <item name="colorOnSurface">@color/white</item>
+
+        <!-- Status bar color -->
+        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+    </style>
+
+</resources>

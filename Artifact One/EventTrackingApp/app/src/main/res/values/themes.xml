@@ -1,0 +1,53 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Application theme without action bar -->
+    <style name="Theme.Default" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/white</item>
+        <item name="colorPrimaryVariant">@color/sky</item>
+        <item name="colorOnPrimary">@color/storm</item>
+
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/ocean</item>
+        <item name="colorSecondaryVariant">@color/sky</item>
+        <item name="colorOnSecondary">@color/white</item>
+
+        <!-- Background and surface colors -->
+        <item name="android:windowBackground">@color/windowBackground</item>
+        <item name="colorSurface">@color/silver</item>
+        <item name="colorOnSurface">@color/black</item>
+
+        <!-- Outline and error -->
+        <item name="colorOutline">@color/colorOutline</item>
+        <item name="colorError">@color/colorError</item>
+
+        <!-- Status bar color -->
+        <item name="android:statusBarColor">@color/white</item>
+    </style>
+
+    <!-- Application theme with Light action bar -->
+    <style name="Theme.ActionBar" parent="Theme.MaterialComponents.Light">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/white</item>
+        <item name="colorPrimaryVariant">@color/sky</item>
+        <item name="colorOnPrimary">@color/storm</item>
+
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/ocean</item>
+        <item name="colorSecondaryVariant">@color/sky</item>
+        <item name="colorOnSecondary">@color/white</item>
+
+        <!-- Background and surface colors -->
+        <item name="android:windowBackground">@color/windowBackground</item>
+        <item name="colorSurface">@color/silver</item>
+        <item name="colorOnSurface">@color/black</item>
+
+        <!-- Outline and error -->
+        <item name="colorOutline">@color/colorOutline</item>
+        <item name="colorError">@color/colorError</item>
+
+        <!-- Status bar color -->
+        <item name="android:statusBarColor">@color/white</item>
+    </style>
+
+</resources>
